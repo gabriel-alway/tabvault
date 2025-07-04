@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save Tab</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Save This Tab</h1>
+      <p id="tabTitle" class="tab-title">Loading tab title...</p>
+    </div>
+    
+    <div class="form-section">
+      <label for="note">Note (optional)</label>
+      <textarea id="note" placeholder="Add a note about this tab..."></textarea>
+      
+      <label for="category">Category</label>
+      <div class="input-group">
+        <select id="categoryDropdown">
+          <option value="">Select Category</option>
+        </select>
+        <input type="text" id="category" placeholder="Or create new category..." />
+      </div>
+      
+      <label for="session">Session (optional)</label>
+      <div class="input-group">
+        <select id="sessionDropdown">
+          <option value="">Select Session</option>
+        </select>
+        <input type="text" id="session" placeholder="Or create new session..." />
+      </div>
+    </div>
+    
+    <div class="button-section">
+      <button id="saveBtn" class="btn-primary">Save Tab</button>
+      <button id="viewBtn" class="btn-secondary">View Dashboard</button>
+    </div>
+    
+    <div class="sidebar-toggle-section">
+      <label class="toggle-label">
+        <input type="checkbox" id="sidebarToggle">
+        <span class="toggle-slider"></span>
+        <span class="toggle-text">Quick Access Sidebar</span>
+      </label>
+      <p class="toggle-description">Enable sidebar for quick session launching</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
